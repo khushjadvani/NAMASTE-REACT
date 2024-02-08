@@ -4,7 +4,7 @@
   "description": "this is namste react by khush" ,
   
   "scripts": {
-    "start" : "parcel Episode-4/1index.html",
+    "start" : "parcel Episode-5/1index.html",
     "build" : "parcel build 1index.html",
     "test": "jest"
   },

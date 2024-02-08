@@ -105,7 +105,7 @@ import ReactDOM from "react-dom/client";
 
 const Title = () => (
   <a href="/">
-    <img className="logo" src = "https://i.pinimg.com/474x/f0/92/45/f09245674400a75295dc2578b49f0004.jpg" alt="Food Fire Logo" />
+    <img className="logo" src = "https://i.pinimg.com/474x/f0/92/45/f09245674400a75295dc2578b49f0004.jpg" alt=" Logo" />
   </a>
 );
 

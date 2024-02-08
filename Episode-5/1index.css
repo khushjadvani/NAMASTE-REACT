@@ -43,6 +43,12 @@
 
 /* Body CSS */
 
+.filter-btn{
+    width: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
 .restaurant-list{
     width: auto;
     display: flex;

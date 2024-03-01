@@ -71,3 +71,9 @@ Two type to export files
 
     Diff Algorithm
         -Find the difference between old V-DOM and new V-DOM
+
+--------type of comments------------
+//? nevil 
+//* nevil 
+//! nevil 
+//TODO nevil

@@ -27,12 +27,12 @@ class UserClass extends React.Component {
   // now time to commit phase
   //to fetch an API prifixe is async
   async componentDidMount() {
-    console.log(this.props.Name + "componentDidMount");
+    // console.log(this.props.Name + "componentDidMount");
 
     const data = await fetch("https://api.github.com/users/khushjadvani");
     const json = await data.json();
 
-    console.log(json);
+    // console.log(json);
 
     this.setState({
       userInfo : json ,

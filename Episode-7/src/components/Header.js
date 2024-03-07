@@ -3,10 +3,11 @@
  It creates an anchor (<a>) element with a href attribute set to "/", which typically represents the root of a website */
 //  he alt attribute provides alternative text for the image, useful for accessibility and if the image fails to load.
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { LOGO_URL } from "../utils/constant";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/userContext";
 
 const Title = () => (
   <a href="/">
@@ -21,6 +22,9 @@ const Header = () => {
 
   const onlineStatus = useOnlineStatus();
 
+  const {loggedInUser} = useContext(UserContext);
+  console.log(loggedInUser)
+
   return (
 
     // <div className = "text-5xl underline">
@@ -31,7 +35,7 @@ const Header = () => {
  
 
     //?Header
-    <div className=" flex justify-between bg-pink-600 text-white ">
+    <div className=" flex justify-between bg-gray-900 text-white ">
       {/* <Title /> */}
       <div className="logo-container">
         <a href="/">
@@ -73,7 +77,12 @@ const Header = () => {
               </image>
 
               {btnNameReact}
+
+
             </button>
+          </li>
+          <li>
+          {loggedInUser}
           </li>
         </ul>
       </div>
